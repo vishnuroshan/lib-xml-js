@@ -3,14 +3,12 @@ const shortid = require('shortid');
 const fs = require('fs');
 
 function printXMLfromfile(args) {
-  console.log(args);
   const create = args['create'] ? true : false;
   const addRandomChild = args['addRandomChild'] ? true : false;
   const filepath = args._[0];
-  console.log(filepath)
   if (!filepath) return 'see help';
 
-  if(create && addRandomChild) return 'see help';
+  if (create && addRandomChild) return 'see help';
 
   if (!create && !addRandomChild && filepath) {
     console.log('reading xml file:');
