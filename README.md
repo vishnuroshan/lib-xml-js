@@ -1,7 +1,7 @@
 # lib-xml-js
 
 #### to test
-node bin/index.js <xml_file_path>
+``node bin/index.js <xml_file_path>``
 
 #### To install
 
